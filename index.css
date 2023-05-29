@@ -1,0 +1,74 @@
+.title {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 15px;
+}
+
+.btn {
+    height: 60px;
+    width: 50%;
+    background: none;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.11s linear;
+    font-size:140%;
+}
+
+.btn:hover {
+    margin: 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.05);
+    height: 70px;
+    width: 50%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.usernameBox{
+    display:none;
+}
+
+.usernameBox input{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    font-size: 1em;
+
+}
+
+.usernameBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    padding-left: 22px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.usernameBox input:valid ~ span,
+.usernameBox input:focus ~ span
+{
+color:#ffffffdf;
+transform: translateX(15px) translateY(-7px);
+font-size: 0.75em;
+padding: 0 10px;
+background: #ffab12;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #ffffff;
+letter-spacing: 0.2em;
+}

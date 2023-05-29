@@ -1,0 +1,51 @@
+
+.question{
+    min-height: 70px;
+    /* border: 3px solid rgb(16, 13, 9); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px 0;
+}
+
+.option{
+    height: 70px;
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.11s linear;
+    /* text-decoration: ; */
+}
+
+.option-icon{
+    width: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.option:hover{
+    margin: 10px 5px 10px;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(255,255,255,0.5);
+    border-right: 1px solid rgb(255,255,255,0.2);
+    border-bottom: 1px solid rgb(255,255,255,0.2);
+    box-shadow:0 5px 15px rgb(0,0,0,0.05);
+}
+
+/* .option:hover i{
+    
+    border: 2px solid #fff;
+    border-radius: 100%;
+} */
