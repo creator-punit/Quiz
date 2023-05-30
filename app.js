@@ -1,4 +1,3 @@
-const username= []
 const question = ["Who is the president of ecell SGSITS?", "Who is the president of NSS SGSITS?", "Who is the president of InDhan SGSITS?", "Who is the president of GSPH SGSITS?", "Who is the president of India?"]
 const incorrectOption1 = ["someone", "Amaya", "Zion", "Aaliyah", "Finn"]
 const incorrectOption2 = ["anyone", "Alina", "Mia", "Aurora", "Maeve"]
@@ -13,13 +12,13 @@ const option2_html = document.querySelector("#option-content-2");
 const option3_html = document.querySelector("#option-content-3");
 const option4_html = document.querySelector("#option-content-4");
 
-
+// allUsername.push(share.)
 
 function initiate() {
     if(n<question.length-1){
     n++;
     return n;}else{
-         window. location. replace("index.html")
+        window.location.replace("index.html")
     }
 }
 console.log(n)
