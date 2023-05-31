@@ -40,7 +40,7 @@
 .usernameBox input{
     width: 100%;
     padding: 10px;
-    background: none;
+    background: rgb(255, 255, 255, 0.15);
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(255, 255, 255, 0.25);
@@ -52,6 +52,7 @@
     position: absolute;
     left: 0;
     padding: 10px;
+    letter-spacing: 0.1em;
     padding-left: 22px;
     pointer-events: none;
     font-size: 1em;

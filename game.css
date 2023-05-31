@@ -49,3 +49,76 @@
     border: 2px solid #fff;
     border-radius: 100%;
 } */
+
+.float{
+    position:absolute;
+    border: 1px solid rgb(255,255,255,0.1);
+    border-right: 1px solid rgb(255,255,255,0.1);
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    box-shadow:0 25px 45px rgb(0,0,0,0.1);
+    background-color: rgb(255,255,255,0.1);
+    /* z-index: 2; */
+    border-radius: 10px;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-1s*var(--i));
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+.user{
+    position:absolute;
+    border: 1px solid rgb(255,255,255,0.1);
+    border-right: 1px solid rgb(255,255,255,0.1);
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    box-shadow:0 25px 45px rgb(0,0,0,0.1);
+    background-color: rgb(255,255,255,0.1);
+    border-radius: 10px;
+    top: 220px;
+    height: 200px;
+    width: 200px;
+    right: 920px;
+    padding: 20px;
+    z-index: 0;
+    transition: right 0.5s, z-index 0.5s, transform 0.5s;
+    transition-delay: 0.5s, 0s, 0s;
+}
+
+.user:hover{
+    transition-delay: 0s, 0.5s, 0.5s;
+    right: 1075px;
+    transform: translateX(100px);
+    z-index: 2;
+}
+
+.float:nth-child(2){
+    top: 420px;
+    height: 100px;
+    width: 100px;
+    right: 400px;
+}
+.float:nth-child(3){
+    top: 120px;
+    height: 150px;
+    width: 150px;
+    right: 400px;
+}
+.float:nth-child(4){
+    top: 570px;
+    height: 120px;
+    width: 120px;
+    right: 1030px;
+}
+.float:nth-child(5){
+    top: 150px;
+    height: 50px;
+    width: 50px;
+    right: 800px;
+}

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'IBM Plex Mono', monospace;
     color: white;
+    overflow: hidden;
     /* border: 2px dashed orange; */
 }
 body{
@@ -18,10 +19,11 @@ body{
 }
 
 .container{
+
     border: 1px solid rgb(255,255,255,0.3);
     border-right: 1px solid rgb(255,255,255,0.1);
     border-bottom: 1px solid rgb(255,255,255,0.1);
-    height:auto;
+    max-height: 500px;;
     width: 600px;
     display: flex;
     flex-direction: column;
